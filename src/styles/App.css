@@ -1,0 +1,17 @@
+@import url(main.css);
+
+.range-cell {
+    background-color: #d9e0d6;
+    border: 1px solid #464646;
+    height: 25px;
+    padding: 2px;
+    text-align: center;
+    width: 34px;
+    font-weight: normal;
+    font-size: 0.75em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.range-cell-selected {
+	background-color: rgb(122, 186, 101);
+}
