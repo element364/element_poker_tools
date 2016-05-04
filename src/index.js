@@ -12,6 +12,7 @@ import HandEquity from './components/HandEquity'
 
 import Theory_Rol_Matematiki_v_Pokere from './components/theory/Theory_Rol_Matematiki_v_Pokere'
 import Theory_Shansi_Banka_I_Rachet_Ekviti from './components/theory/Theory_Shansi_Banka_I_Rachet_Ekviti'
+import Theory_Sovety_v_obuchenii from './components/theory/Theory_Sovety_v_obuchenii.jsx';
 
 import { Router, Route, IndexRoute, hashHistory  } from 'react-router'; 
 
@@ -26,6 +27,7 @@ render(
 			<Route path="/hand_equity" component={HandEquity} />
 			<Route path="/theory_rol_matematiki_v_pokere" component={Theory_Rol_Matematiki_v_Pokere} />
 			<Route path="/theory_shansi_banka_i_rachet_ekviti" component={Theory_Shansi_Banka_I_Rachet_Ekviti} />
+			<Route path="/theory_sovety_v_obuchenii" component={Theory_Sovety_v_obuchenii} />
 			<Route path="/" component={App} />
 		</Router>
 	</Provider>,

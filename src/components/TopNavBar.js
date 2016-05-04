@@ -15,9 +15,9 @@ class TopNavBar extends React.Component {
 				</Navbar.Header>
 				<Navbar.Collapse>
 					<Nav>
-						<NavDropdown eventKey={1} title="Нэщ чарты" id="basic-nav-dropdown">
+						<NavDropdown eventKey={1} title="Нэш чарты" id="basic-nav-dropdown">
 							<MenuItem eventKey={1.1}>
-								<Link to="/nash">Нэш чарты</Link>
+								<Link to="/nash">Нэш чарты MTT</Link>
 							</MenuItem>
 							<MenuItem eventKey={1.2}>
 								<Link to="/nashSpin">Нэш чарты Spin</Link>
@@ -40,9 +40,12 @@ class TopNavBar extends React.Component {
 							<MenuItem eventKey={3.2}>
 								<Link to="/theory_shansi_banka_i_rachet_ekviti">Шансы банка и расчет эквити</Link>
 							</MenuItem>
-							<MenuItem eventKey={3.3}>Something else here</MenuItem>
+							<MenuItem eventKey={3.3}>
+								<Link to="/theory_sovety_v_obuchenii">Советы в обучении</Link>
+							</MenuItem>
+							<MenuItem eventKey={3.4}>Something else here</MenuItem>
 							<MenuItem divider />
-							<MenuItem eventKey={3.3}>Separated link</MenuItem>
+							<MenuItem eventKey={3.5}>Separated link</MenuItem>
 						</NavDropdown>
 					</Nav>
 				</Navbar.Collapse>
