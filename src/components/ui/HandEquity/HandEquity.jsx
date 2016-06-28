@@ -1,7 +1,7 @@
 import React from 'react'
 import {Input, Row, Col} from 'react-bootstrap'
 
-import TopNavBar from './TopNavBar'
+import TopNavBar from '../TopNavBar/TopNavBar'
 import Range from './Range'
 
 class HandEquity extends React.Component {

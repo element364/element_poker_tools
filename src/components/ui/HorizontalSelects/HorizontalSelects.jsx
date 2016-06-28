@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {classNames} from './Seat'
+import {classNames} from '../Table/Seat'
 
 class HorizontalSelects extends React.Component {
 	constructor (props) {

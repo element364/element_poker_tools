@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {classNames} from './Seat'
+import {classNames} from '../Table/Seat'
 
 class Hand extends React.Component {
 	onMouseOver (e) {
@@ -30,7 +30,7 @@ class Hand extends React.Component {
 				{handNode}
 			</td>
 		)
-	}	
+	}
 }
 
 Hand.defaultProps = {

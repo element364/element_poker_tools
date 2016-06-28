@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TopNavBar from '../TopNavBar'
+import TopNavBar from '../../ui/TopNavBar/TopNavBar.jsx';
 
 class Theory_Rol_Matematiki_v_Pokere extends React.Component {
 	render () {
@@ -134,7 +134,7 @@ class Theory_Rol_Matematiki_v_Pokere extends React.Component {
 											<li>Сделав фолд, на дистанции, мы будем терять 20 фишек при каждом таком решении</li>
 											<li>Заколлировав, мы будем в плюсе на 2 фишки</li>
 											<li>Переставив, мы будем в минусе на 1 фишку</li>
-										</ul> 
+										</ul>
 								</li>
 								<li>В кэше это позволяет в долларах оценить ценность каждого решения</li>
 							</ul>
@@ -148,7 +148,7 @@ class Theory_Rol_Matematiki_v_Pokere extends React.Component {
 						</li>
 					</ol>
 				</div>
-			</div> 
+			</div>
 		)
 	}
 }

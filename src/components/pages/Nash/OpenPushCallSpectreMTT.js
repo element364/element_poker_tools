@@ -914,7 +914,7 @@ openPushRangesAnte[12] = {
 			'MP1': '88+,AJs+,AQo+', // 5.9%
 			'MP2': '88+,AJs+,AQo+', // 5.9%
 			'MP3': '88+,AJs+,AQo+', // 5.9%
-			'CO': '88+,AJs+,AQo+', // 5.9% 
+			'CO': '88+,AJs+,AQo+', // 5.9%
 			'BTN': '88+,AJs+,AQo+', // 5.9%
 			'SB': '88+,AJs+,AQo+', // 5.9%
 			'BB': '88+,ATs+,AJo+' // 7.1%

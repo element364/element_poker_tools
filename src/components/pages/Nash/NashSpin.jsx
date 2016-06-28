@@ -1,8 +1,8 @@
 import React from 'react'
-import {Grid, Row, Col, Input, ButtonGroup, Button} from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap'
 
-import TopNavBar from './TopNavBar'
-import HorizontalSelects from './HorizontalSelects'
+import TopNavBar from '../../ui/TopNavBar/TopNavBar'
+import HorizontalSelects from '../../ui/HorizontalSelects/HorizontalSelects'
 import OpenPushCallRange from './OpenPushCallRange'
 import OpenPushCallSpectreSpin from './OpenPushCallSpectreSpin'
 
@@ -15,7 +15,7 @@ class NashSpin extends React.Component {
 
 		this.state = {
 			stack: 2,
-			position: 'BTN',
+			position: 'BTN'
 		}
 	}
 

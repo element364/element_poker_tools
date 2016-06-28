@@ -1,23 +1,19 @@
 import React from 'react'
 
-import Range from './Range'
+import Range from '../../ui/HandEquity/Range'
 
 const anyTwoRange = '22+,A2+,K2+,Q2+,J2+,T2+,92+,82+,72+,62+,52+,42+,32'
 
 export {anyTwoRange}
 
 class OpenPushCallRange extends React.Component {
-	render () {
-		console.log(`Stack - ${this.props.stack}`)
-		console.log(`Position - ${this.props.position}`)
-
+	render() {
 		const anteKey = this.props.ante ? 'openPushRangesAnte' : 'openPushRangesNoAnte'
 		let nashRange = this.props.openPushCallSpectre[anteKey][this.props.stack]
 
 		let openPushRange = nashRange[this.props.position].openPushRange
 		let callPushRanges = nashRange[this.props.position].callRange
 
-		console.log(callPushRanges)
 		const callPushRangeNodes = Object.keys(callPushRanges).map((position) => {
 			return (
 				<div>

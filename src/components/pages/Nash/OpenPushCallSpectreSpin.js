@@ -1,5 +1,3 @@
-import {anyTwoRange} from './OpenPushCallRange'
-
 let openPushRangesNoAnte = {}
 
 // Эффективный стек 2BB без анте

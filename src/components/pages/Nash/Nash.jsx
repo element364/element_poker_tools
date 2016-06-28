@@ -1,8 +1,8 @@
 import React from 'react'
-import {Grid, Row, Col, Input, ButtonGroup, Button} from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap'
 
-import TopNavBar from './TopNavBar'
-import HorizontalSelects from './HorizontalSelects'
+import TopNavBar from '../../ui/TopNavBar/TopNavBar'
+import HorizontalSelects from '../../ui/HorizontalSelects/HorizontalSelects'
 import OpenPushCallRange from './OpenPushCallRange'
 import OpenPushCallSpectreMTT from './OpenPushCallSpectreMTT'
 
@@ -10,7 +10,7 @@ const stackValues = [2,3,4,5,6,7,8,9,10,11,12]
 const positionValues = ['UTG', 'UTG+1', 'MP1', 'MP2', 'MP3', 'CO', 'BTN', 'SB']
 
 class Nash extends React.Component {
-	constructor (props) {
+	constructor(props) {
 		super(props)
 
 		this.state = {
@@ -20,17 +20,17 @@ class Nash extends React.Component {
 		}
 	}
 
-	handleStackSelect2 (e) {
+	handleStackSelect2(e) {
 		const stack = parseInt(e)
 		this.setState({ stack })
 	}
 
-	handlePositionSelect2 (e) {
+	handlePositionSelect2(e) {
 		const position = e
 		this.setState({ position })
 	}
 
-	render () {
+	render() {
 		return (
 			<div className="index">
 				<TopNavBar />

@@ -3,15 +3,14 @@ require('styles/App.css')
 
 import React from 'react'
 
-import TopNavBar from './TopNavBar'
-import Table from './Table'
-import Question from './Question'
-import Range from './Range'
+import TopNavBar from './ui/TopNavBar/TopNavBar'
+import Table from './ui/Table/Table'
+import Range from './ui/HandEquity/Range'
 
 import {Tabs, Tab, Panel} from 'react-bootstrap'
 
 class AppComponent extends React.Component {
-	constructor (props) {
+	constructor(props) {
 		super(props)
 
 		this.state = {
@@ -19,12 +18,8 @@ class AppComponent extends React.Component {
 		}
 	}
 
-	handleSelect (key) {
+	handleSelect(key) {
     	this.setState({key});
-	}
-
-	handleMenySelect (key) {
-		debugger;
 	}
 
 	render() {

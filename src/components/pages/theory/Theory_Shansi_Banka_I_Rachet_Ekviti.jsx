@@ -1,28 +1,28 @@
 import React from 'react'
 
-import TopNavBar from '../TopNavBar'
-import MathDisplay from '../MathDisplay'
+import TopNavBar from '../../ui/TopNavBar/TopNavBar.jsx';
+import MathDisplay from '../../ui/MathDisplay/MathDisplay.jsx';
 
 class Spades extends React.Component {
-	render () {
+	render() {
 		return <span style={{ color: 'black' }}>&spades;</span>
 	}
 }
 
 class Clubs extends React.Component {
-	render () {
+	render() {
 		return <span style={{ color: 'black' }}>&clubs;</span>
 	}
 }
 
 class Hearts extends React.Component {
-	render () {
+	render() {
 		return <span style={{ color: 'red' }}>&hearts;</span>
 	}
 }
 
 class Diamonds extends React.Component {
-	render () {
+	render() {
 		return <span style={{ color: 'red' }}>&diams;</span>
 	}
 }

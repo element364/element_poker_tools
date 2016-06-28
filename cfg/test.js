@@ -7,6 +7,7 @@ let baseConfig = require('./base');
 
 // Add needed plugins here
 let BowerWebpackPlugin = require('bower-webpack-plugin');
+let NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 
 module.exports = {
   devtool: 'eval',
@@ -53,6 +54,7 @@ module.exports = {
   plugins: [
     new BowerWebpackPlugin({
       searchResolveModulesDirectories: false
-    })
+    }),
+    new NyanProgressPlugin()
   ]
 };

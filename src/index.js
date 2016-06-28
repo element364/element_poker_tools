@@ -4,23 +4,30 @@ import { Provider } from 'react-redux'
 import configureStore from './stores'
 import App from './containers/App'
 
-import Nash from './components/Nash'
-import NashSpin from './components/NashSpin'
-import NashHA from './components/NashHA'
+import Nash from './components/pages/Nash/Nash'
+import NashSpin from './components/pages/Nash/NashSpin'
+import NashHA from './components/pages/Nash/NashHA'
 
-import HandEquity from './components/HandEquity'
+import HandEquity from './components/ui/HandEquity/HandEquity'
 
-import Theory_Rol_Matematiki_v_Pokere from './components/theory/Theory_Rol_Matematiki_v_Pokere'
-import Theory_Shansi_Banka_I_Rachet_Ekviti from './components/theory/Theory_Shansi_Banka_I_Rachet_Ekviti'
-import Theory_Sovety_v_obuchenii from './components/theory/Theory_Sovety_v_obuchenii.jsx';
+import Theory_Rol_Matematiki_v_Pokere from 'components/pages/theory/Theory_Rol_Matematiki_v_Pokere'
+import Theory_Shansi_Banka_I_Rachet_Ekviti from 'components/pages/theory/Theory_Shansi_Banka_I_Rachet_Ekviti'
+import Theory_Sovety_v_obuchenii from 'components/pages/theory/Theory_Sovety_v_obuchenii';
 
-import { Router, Route, IndexRoute, hashHistory  } from 'react-router'; 
+import { syncHistoryWithStore } from 'react-router-redux';
+import { Router, Route, hashHistory } from 'react-router';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'katex/dist/katex.min.css';
 
 const store = configureStore();
 
+// Create an enhanced history that syncs navigation events with the store
+const history = syncHistoryWithStore(hashHistory, store)
+
 render(
 	<Provider store={store}>
-		<Router history={hashHistory}>
+		<Router history={history}>
 			<Route path="/nash" component={Nash} />
 			<Route path="/nashSpin" component={NashSpin} />
 			<Route path="/nashHA" component={NashHA} />

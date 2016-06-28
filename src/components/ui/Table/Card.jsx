@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component, PropTypes as pt } from 'react';
 
-class Card extends React.Component {
+class Card extends Component {
 	render () {
 		const cardRank = `c${ this.props.rank.toUpperCase() }`
 
@@ -13,15 +13,15 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
-	rank: React.PropTypes.string,
-	left: React.PropTypes.string,
-	top: React.PropTypes.string
-}
+	rank: pt.string,
+	left: pt.string,
+	top: pt.string
+};
 
 Card.defaultProps = {
 	rank: 'NA',
 	left: '0px',
 	top: '0px'
-}
+};
 
-export default Card
+export default Card;

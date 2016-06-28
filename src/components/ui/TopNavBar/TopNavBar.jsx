@@ -26,9 +26,9 @@ class TopNavBar extends React.Component {
 								<Link to="/nashHA">Нэш чарты HA</Link>
 							</MenuItem>
 						</NavDropdown>
-						<NavItem eventKey={4}>
+						<li role="presentation">
 							<Link to="/hand_equity">Equity</Link>
-						</NavItem>
+						</li>
 					</Nav>
 					<Nav pullRight>
 						<NavItem eventKey={1} href="#">Link Right</NavItem>

@@ -7,30 +7,11 @@
  *          you edit them, they are not updated again.
  */
 import { combineReducers } from 'redux';
+import { routerReducer } from 'react-router-redux';
+
 /* Populated by react-webpack-redux:reducer */
-
-
-// set up 'route' action and action creator
-const ROUTE = 'ROUTE';
-function createRouteAction (location) {
-    return {
-        type: ROUTE,
-        payload: location
-    };
-}
-
-// set up reducer. here we only define behavior for the route action
 const reducers = {
-	routeReducer (state = {}, action) {
-	    if (action.type === ROUTE) {
-	        return Object.assign({}, state, {
-	            route: action.payload
-	        });
-	    }
-	    else {
-	        return state;
-	        // whatever other logic you need
-	    }
-	}
+	routing: routerReducer
 };
+
 module.exports = combineReducers(reducers);

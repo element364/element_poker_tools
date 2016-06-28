@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Hand from './Hand'
-import {classNames} from './Seat'
 
 const cards = ['', 'A', 'K', 'Q', 'J', 'T', '9', '8', '7', '6', '5', '4', '3', '2']
 
@@ -137,14 +136,14 @@ class Range extends React.Component {
 		if (props.addedHands) {
 			props.addedHands.forEach((handCards) => {
 				this.state.hand[handCards] = true
-			})			
+			})
 		}
 
 		if (props.removedHands) {
 			props.removedHands.forEach((handCards) => {
 				this.state.hand[handCards] = false
 			})
-		}		
+		}
 	}
 
 	componentWillReceiveProps (newProps) {

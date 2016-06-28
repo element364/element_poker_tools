@@ -1,6 +1,6 @@
 import React from 'react'
 
-import TopNavBar from '../TopNavBar'
+import TopNavBar from '../../ui/TopNavBar/TopNavBar.jsx';
 
 class Theory_Sovety_v_obuchenii extends React.Component {
 	render () {

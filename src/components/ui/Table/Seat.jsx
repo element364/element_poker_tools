@@ -50,7 +50,7 @@ class Seat extends React.Component {
 }
 
 Seat.propTypes = {
-	isDealer: React.PropTypes.bool, 
+	isDealer: React.PropTypes.bool,
 	isEmpty: React.PropTypes.bool,
 	isFocused: React.PropTypes.bool,
 	isFolded: React.PropTypes.bool,

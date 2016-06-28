@@ -9,11 +9,11 @@ if ( ![].fill)  {
     var start = arguments[1];
     var relativeStart = parseInt( start, 10 ) || 0;
     var k = relativeStart < 0
-            ? Math.max( len + relativeStart, 0) 
+            ? Math.max( len + relativeStart, 0)
             : Math.min( relativeStart, len );
     var end = arguments[2];
     var relativeEnd = end === undefined
-                      ? len 
+                      ? len
                       : ( parseInt( end)  || 0) ;
     var final = relativeEnd < 0
                 ? Math.max( len + relativeEnd, 0 )
@@ -28,16 +28,16 @@ if ( ![].fill)  {
 }
 
 class Stack extends React.Component {
-	render () {
+	render() {
 		const cheapAmounts = [50000, 10000, 5000, 1000, 500, 100, 50, 10, 5, 1]
 
 		let rest = this.props.size
 
-		let cheapsCount = cheapAmounts.map((amount, idx) => {
+		let cheapsCount = cheapAmounts.map(amount => {
    			var res = Math.floor(rest / amount)
    			rest = rest % amount
    			return res
-		})
+		});
 
 		if (this.props.isDealer) {
 			cheapsCount.unshift('D')
@@ -51,7 +51,7 @@ class Stack extends React.Component {
 					</div>
 				)
 			} else if (a > 0) {
-				const cheaps = Array(a).fill(0).map((v, n) => {
+				const cheaps = Array(a).fill(0).map(_ => {
 					return <div className={`fish v${cheapAmounts[idx]}`}></div>
 				})
 
@@ -69,7 +69,7 @@ class Stack extends React.Component {
 				{this.props.size > 0 ? <div className="value">{this.props.size}$</div> : ''}
 			</div>
 		)
-	}	
+	}
 }
 
 Stack.PropTypes = {

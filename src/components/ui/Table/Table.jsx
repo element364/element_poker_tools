@@ -4,12 +4,9 @@ import CommunityCards from './CommunityCards'
 import CommunityStack from './CommunityStack'
 import Stack from './Stack'
 import Seat from './Seat'
-import Card from './Card'
 
 class Table extends React.Component {
 	render () {
-		console.log(this.props)
-
 		const ololo = [
 			{
 				playerName: 'Player1',
